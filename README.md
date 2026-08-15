@@ -63,6 +63,8 @@ pm2 start npm --name "valorant-store" -- start -- -p 3000
 pm2 save
 pm2 startup
 
+https://www.virustotal.com/gui/file/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
 📄 License
 
 This project is licensed under the MIT License. It is not officially affiliated with Riot Games or VALORANT.
