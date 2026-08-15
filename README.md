@@ -1,74 +1,68 @@
-# 🎯 VALORANT Canlı Günlük Mağaza Takipçisi (Store Checker)
+🎯 VALORANT Live Daily Store Checker
 
-Modern, hızlı, mobil uyumlu ve güvenli **VALORANT Günlük Mağaza Takip** web uygulaması.
+A modern, fast, mobile-friendly, and secure VALORANT Daily Store Tracker web application.
 
-Oyun istemcisini açmaya gerek kalmadan, doğrudan resmi Riot Games OAuth yetkilendirmesi üzerinden günlük 4 silah kaplaması teklifinizi, VP fiyatlarını, kalan süreyi ve oyun içi skin video önizlemelerini canlı olarak görüntüleyin.
+View your daily 4 weapon skin offers, VP prices, remaining time, and in-game skin video previews live directly via official Riot Games OAuth authorization—without needing to launch the game client.
+✨ Features
 
-![Valorant Store Preview](https://raw.githubusercontent.com/valorant-api-assets/preview/main/preview.png)
+    🔒 100% Official & Secure: Powered by official riot-client OAuth credentials. Your password is never stored on third-party servers.
 
----
+    ⚡ Automatic Clipboard Detection: After logging in on the Riot page, simply copy the URL from the address bar; returning to the tab will automatically load your store.
 
-## ✨ Özellikler
+    📱 Mobile-First Design: Fully responsive interface tailored for desktop, tablet, and mobile (iOS / Android) screens.
 
-- **🔒 %100 Resmi & Güvenli:** Resmi `riot-client` OAuth kimliği ile çalışır. Şifreniz asla üçüncü taraf sunucularda saklanmaz.
-- **⚡ Otomatik Pano Algılama:** Riot sayfasında giriş yaptıktan sonra adres çubuğundaki linki kopyalayıp sekmeye döndüğünüz anda mağazanız otomatik yüklenir.
-- **📱 Mobile-First Tasarım:** Masaüstü, tablet ve mobil (iOS / Android) ekranlara tam uyumlu arayüz.
-- **🎬 Canlı Video Önizlemeleri:** Her silah kaplamasının seviye efektlerini ve bitirici (finisher) animasyonlarını video modal üzerinden izleyin.
-- **💎 VP Fiyatlandırması & Nadirlik:** Skin nadirlik katmanlarına göre renk efektleri ve güncel VP maliyetleri.
-- **⏱️ Canlı Geri Sayım Sayacı:** Mağazanın 24 saatlik yenilenme süresine kalan dakikayı canlı takip edin.
-- **🌍 Otomatik Bölge Çözümleme (PAS):** Türkiye, Avrupa (EU), Kuzey Amerika (NA), Asya (AP) ve Kore (KR) sunucularını otomatik algılar.
+    🎬 Live Video Previews: Watch level effects and finisher animations for every weapon skin directly inside a video modal.
 
----
+    💎 VP Pricing & Rarity: Color effects and live VP costs mapped to skin rarity tiers.
 
-## 🛠️ Kullanılan Teknolojiler
+    ⏱️ Live Countdown Timer: Track the remaining time until the 24-hour daily store reset in real-time.
 
-- **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
-- **UI & İkonlar:** [Tailwind CSS](https://tailwindcss.com/) & [Lucide React](https://lucide.dev/)
-- **Dil:** [TypeScript](https://www.typescriptlang.org/)
-- **Veri & API:** Riot Games PvP Gateway & [valorant-api.com](https://valorant-api.com/)
-- **Sunucu / Dağıtım:** Node.js, PM2, Nginx
+    🌍 Automatic Region Resolution (PAS): Automatically detects Turkey, Europe (EU), North America (NA), Asia-Pacific (AP), and Korea (KR) servers.
 
----
+🛠️ Built With
 
-## 🚀 Kurulum ve Yerel Çalıştırma
+    Framework: Next.js 16 (App Router)
 
-### 1. Depoyu Klonlayın
-```bash
-git clone https://github.com/kullanici-adiniz/valorant-store-app.git
+    UI & Icons: Tailwind CSS & Lucide React
+
+    Language: TypeScript
+
+    Data & API: Riot Games PvP Gateway & valorant-api.com
+
+    Server / Deployment: Node.js, PM2, Nginx
+
+🚀 Installation & Local Development
+1. Clone the Repository
+Bash
+
+git clone https://github.com/your-username/valorant-store-app.git
 cd valorant-store-app
-```
 
-### 2. Bağımlılıkları Yükleyin
-```bash
+2. Install Dependencies
+Bash
+
 npm install
-```
 
-### 3. Geliştirici Sunucusunu Başlatın
-```bash
+3. Start the Development Server
+Bash
+
 npm run dev
-```
 
-Tarayıcınızda **[http://localhost:3000](http://localhost:3000)** adresine giderek uygulamayı kullanmaya başlayabilirsiniz!
+Open http://localhost:3000 in your browser to start using the app!
+📦 VPS Deployment
 
----
+To run the application 24/7 on a Linux (Debian/Ubuntu) server:
+Bash
 
-## 📦 Kendi Sunucunuzda (VPS) Yayınlama
-
-Uygulamayı bir Linux (Debian/Ubuntu) sunucusunda 7/24 çalıştırmak için:
-
-```bash
-# 1. Projeyi derleyin
+# 1. Build the project
 npm run build
 
-# 2. PM2 ile arka planda başlatın
+# 2. Start in background with PM2
 npm install -g pm2
 pm2 start npm --name "valorant-store" -- start -- -p 3000
 pm2 save
 pm2 startup
-```
 
----
+📄 License
 
-## 📄 Lisans
-
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Riot Games veya VALORANT ile resmi bir bağlantısı yoktur.
+This project is licensed under the MIT License. It is not officially affiliated with Riot Games or VALORANT.
